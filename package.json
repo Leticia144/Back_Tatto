@@ -1,0 +1,13 @@
+{
+  "name": "back_tatto",
+  "version": "1.0.0",
+  "main": "src/sever.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["Tatto", "desenvolvimento WEB", "Node.js", "Express", "Dev BackEnd"],
+  "author": "Letícia Santos Costa",
+  "license": "MIT",
+  "description": "Sistema de exemplo para curso de Técnico de informática do IFSP, aplicando API.",
+  "type": "module"
+}
