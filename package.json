@@ -2,12 +2,27 @@
   "name": "back_tatto",
   "version": "1.0.0",
   "main": "src/sever.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "scripts":{
+    "start": "node src/Server.js",
+    "dev": "nodemon src/Server.js",
+     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["Tatto", "desenvolvimento WEB", "Node.js", "Express", "Dev BackEnd"],
+  "keywords": [
+    "Tatto",
+    "desenvolvimento WEB",
+    "Node.js",
+    "Express",
+    "Dev BackEnd"
+  ],
   "author": "Letícia Santos Costa",
   "license": "MIT",
   "description": "Sistema de exemplo para curso de Técnico de informática do IFSP, aplicando API.",
-  "type": "module"
+  "type": "module",
+  "devDependencies": {
+    "@eslint/js": "^9.26.0",
+    "eslint": "^9.26.0",
+    "globals": "^16.0.0",
+    "nodemon": "^3.1.10",
+    "sucrase": "^3.35.0"
+  }
 }
