@@ -17,5 +17,15 @@ middleawares(){
         extend: true}))
 }
 
+
+    routes() {
+        this.app.use('/', homeRoutes)
+        this.app.use('/usuarios', usuariosRouters);
+    }
+
+
+
+
+
 }
 export default new App().app
