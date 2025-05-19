@@ -1,6 +1,8 @@
-import express from ' express'
+import express from 'express'
 import dotenv from 'dotenv'
+import usuariosRouters from './routers/Usuario.Routes.js'
 import homeRoutes from './routers/Home.Routes.js'
+import './database/ModelConnection.js';
 
 dotenv.config()
 
@@ -20,7 +22,7 @@ middleawares(){
 
     routes() {
         this.app.use('/', homeRoutes)
-        this.app.use('/usuarios', usuariosRouters);
+        this.app.use('/usuario', usuariosRouters);
     }
 
 
