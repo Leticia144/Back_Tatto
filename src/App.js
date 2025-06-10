@@ -1,5 +1,6 @@
 import express from 'express'
 import dotenv from 'dotenv'
+import cors from 'cors';
 import usuariosRouters from './routers/Usuario.Routes.js'
 import homeRoutes from './routers/Home.Routes.js'
 import './database/ModelConnection.js';
@@ -14,6 +15,7 @@ class App {
     }
 
 middleawares(){
+    this.app.use(cors())
     this.app.use(express.json());
     this.app.use(express.urlencoded({
         extend: true}))
